@@ -1,0 +1,55 @@
+# Terraform AWS Instance Deployment
+
+This repository contains Terraform code to deploy a new AWS instance. By following the instructions below, you can quickly spin up a new instance in your desired region using your preferred AMI and instance type.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- Terraform CLI installed on your machine ([Terraform Installation Guide](https://learn.hashicorp.com/tutorials/terraform/install-cli))
+- AWS CLI configured with appropriate credentials ([AWS CLI Configuration Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html))
+
+## Deployment Steps
+
+To deploy a new instance, follow these steps:
+
+1. Clone this repository to your local machine or download the provided `example.tf` file.
+
+2. Open the `example.tf` file in a text editor.
+
+3. Modify the following parameters in the code according to your requirements:
+   - `region`: Replace the value with your desired AWS region.
+   - `ami`: Replace the value with the AMI ID of the image you want to use.
+   - `instance_type`: Replace the value with your desired instance type.
+
+4. Save the changes to the `example.tf` file.
+
+5. Open a terminal or command prompt and navigate to the directory where you saved the `example.tf` file.
+
+6. Initialize the Terraform configuration by running the following command:
+
+
+7. Apply the Terraform configuration to deploy the instance:
+
+
+8. Review the changes that Terraform plans to make. If everything looks correct, type `yes` to confirm and proceed with the deployment.
+
+9. Wait for Terraform to complete the deployment. Once finished, it will display the details of the newly created instance.
+
+## Clean Up
+
+To clean up and destroy the resources created by Terraform, follow these steps:
+
+1. Open a terminal or command prompt and navigate to the directory where you saved the `example.tf` file.
+
+2. Run the following command to destroy the deployed instance:
+
+
+3. Review the changes that Terraform plans to make. If everything looks correct, type `yes` to confirm and proceed with the destruction.
+
+4. Wait for Terraform to destroy the instance and associated resources.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
